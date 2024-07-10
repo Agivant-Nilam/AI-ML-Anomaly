@@ -1,0 +1,22 @@
+[
+    {
+        "TimeStamp": "2024-07-10 22:42:11",
+        "Subject": "Defective Product",
+        "Email_Text": "\"Hello,\nI'm writing to share my neutral feedback on the product (Order ID: #97508) I received. The quality is okay and meets my basic needs. It's neither outstanding nor disappointing.\"\n"
+    },
+    {
+        "TimeStamp": "2024-07-10 22:42:52",
+        "Subject": "Poor Quality Products",
+        "Email_Text": "\"Hello,\n\nI'm writing to share my neutral feedback on the product (Order ID: #59516) I received. The quality is okay and meets my basic needs. It's neither outstanding nor disappointing.\"\n"
+    },
+    {
+        "TimeStamp": "2024-07-10 22:43:09",
+        "Subject": "Product Not as Described",
+        "Email_Text": "\"Dear Customer Support,\n\nI recently received my order (Order ID: #63285) and wanted to provide feedback on the product quality. The item is average in quality and meets basic expectations. While it's not exceptional, it serves its purpose adequately.\"\n"
+    },
+    {
+        "TimeStamp": "2024-07-10 22:43:28",
+        "Subject": "Poor Quality Products",
+        "Email_Text": "\"Hello,\n\nI'm writing to express my extreme satisfaction with the product (Order ID: #56468) I received. The quality is superb and has exceeded my expectations. Thank you for consistently delivering excellent products.\"\n"
+    }
+]

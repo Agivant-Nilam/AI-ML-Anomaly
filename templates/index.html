@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Submission</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Submit Data</h1>
+        <form id="dataForm">
+            <div class="form-group">
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" class="form-control"><br>
+            </div>
+            
+            <div class="form-group">
+                <label for="body">Body:</label>
+                <textarea id="body" name="body" class="form-control"></textarea><br>
+            </div>
+            
+            <button type="button" class="submit-button" onclick="submitData()">Submit</button>
+        </form>
+        
+        <p id="responseMessage"></p>
+    </div>
+
+    <script>
+        function submitData() {
+            const subject = document.getElementById('subject').value;
+            const body = document.getElementById('body').value;
+            
+            fetch('/submit', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    Subject: subject,
+                    Body: body
+                })
+            })
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('responseMessage').innerText = data.message;
+                document.getElementById('dataForm').reset();
+            })
+            .catch(error => console.error('Error:', error));
+        }
+    </script>
+</body>
+</html>
